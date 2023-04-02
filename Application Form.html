@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicattion Form</title>
+    <style>
+        body {
+
+            background-color: antiquewhite;
+        }
+        .PI{
+            background-color: rgb(200, 230, 230);
+            padding: 10px 30px 12px 20px;
+            margin: 20px 20px 20px 20px;
+        
+        }
+    
+        .EI{
+            background-color: rgb(211, 231, 191);
+            padding: 10px 30px 12px 20px;
+            margin: 20px 20px 20px 20px;
+
+
+        .FormTitle {
+            color: red;
+            font-size: 30px;
+            text-align: center;
+            background-color: lightskyblue;
+            width: 450px
+        }
+
+        .Form {
+            color: rgb(26, 25, 24);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2 id="H1" class="FormTitle"> This is PoCRA Application Forms </h2>
+    <ul>
+        <div class="PI">
+            <div class="Form"></div>
+            <!-- create a form using this tags -->
+            <form action="PoCRA.py" class="Form">
+                <h4 id="T1" class="FirstTitle">Personal Information</h4>
+                <label for="SI"> Employee Name :</label>
+                <!-- <label for="firstName">First Name : </label> -->
+                <input type="text" id="T1" name=" Fname" class="SI" placeholder="First Name">
+                <!-- <label for="middlename">Middle Name : </label> -->
+                <input type="text" id=" T2" name="Mname" class="SI" placeholder=" Middle Name">
+                <!-- <label for="lastname">Last Name : </label> -->
+                <input type="text" id="T3" name=" Lname" class="SI" placeholder="Last Name"></span> <br><br>
+                <label for="DOB"> Date of Birth : </label>
+                <input type="date" id="BOD" name=" Birthday"> &nbsp;
+                <label for="POB"> Place of Birth : </label>
+                <span> <input type="text" id="T4" name="POB"></span><br><br>
+                Nationality : <input type="text" id="T5" name="NI"> &nbsp;
+                <span>
+                    <label for="GN">Gender :</label>
+                    <pn id="G" class="GN"><label for="M">Male : </label>
+                        <input id="M" type="radio" name=" myGender">
+                        <label for="F">Female :</label>
+                        <input id="F" type="radio" name=" myGender">
+                        <label for="O">Other</label>
+                        <input id="O" type="radio" name="myGender">
+                        </p>
+                </span>
+        </div>
+        <hr>
+        <div class="EI">
+            <h4 id="T2" class="SecondTitle">Education Information</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree/Exam</th>
+                        <th>Board/University</th>
+                        <th>Percentage (%)</th>
+                        <th>Passing Year</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SSC</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>PG</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>M.Tech</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        <hr>
+        <div>
+            <div>
+                You are working in PoCRA ? :<input type="checkbox" name="myWorking" id="Q1">
+            </div>
+            <br>
+            <label for="postion">Select Postion : </label>
+            <select name=" MyPostion" id="postion">
+                <option value="GIS1"> GIS Specialist </option>
+                <option value="GIS2"> GIS Technical Officer </option>
+                <option value="GIS3"> GIS Developer </option>
+                <option value="GIS4"> GIS Assistant </option>
+            </select>
+            <br>
+            <br>
+
+            <br>
+            <li>
+                <div>
+                    Write about your work : <br><textarea name=" myText" id="" cols="100" rows="10"></textarea>
+                </div>
+            </li>
+            <br>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now" id="">
+                <input type="reset" value="Reset Now" id="">
+            </div>
+            </form>
+
+            <br><br>
+        </div>
+
+
+        <footer>PoCRA Page</footer>
+
+
+</body>
+
+</html>
