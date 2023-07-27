@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* give style for text using class */
+        .admform {
+
+            color: rgb(236, 14, 70);
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(184, 224, 240);">
+
+    <form action="PoCRA_Tabel.html">
+        <h2 id="formtitle" class="admform"> Admission Form </h2>
+        <p><i>Enter your admission information below</i></p>
+        <!-- <label for="firstName">First Name : </label> -->
+        <label id="SN">Student Name :
+            <input type="text" id="T1" name=" Fname" placeholder="First Name">
+            <!-- <label for="middlename">Middle Name : </label> -->
+            <input type="text" id=" T2" name="Mname" placeholder=" Middle Name">
+            <!-- <label for="lastname">Last Name : </label> -->
+            <input type="text" id="T3" name=" Lname" placeholder="Last Name">
+        </label> <br><br>
+        <label for="DOB"> Date of Birth : </label>
+        <input type="date" id="DOB" name=" Birthday"> &nbsp;
+        <label for="POB"> Place of Birth : </label>
+        <span> <input type="text" id="POB" name="POB"></span><br><br>
+
+        <label for="ADD"> Home Address :</label>
+        <input type="text" id="ADD" size="70"> <br><br>
+
+        <label for="EID">Email ID :</label>
+        <input type="email" id="EID"> &nbsp; &nbsp;
+        <label for="phone">Mobile Number :</label>
+        <span>
+            <input type="tel" id="phone" pattern="[0-9]">
+        </span> <br><br>
+
+        <label for="NI">Nationality :</label>
+        <input type="text" id="NI" name="NI"> &nbsp; &nbsp;
+        <!-- add a Gender information in form using radio button -->
+        <span>
+            <label>Gender :
+                <label for="M">Male</label>
+                <input type="radio" id="M" name="Gender">
+                <label for="F">Female</label>
+                <input type="radio" id="F" name="Gender">
+                <label for="O">Other</label>
+                <input type="radio" id="O" name="Gender">
+            </label>
+        </span> <br><br>
+        <label for="Father">Father Name : </label>
+        <input type="text" name="Father Name" id="Father">
+        <span><label for="Mother">Mother Name : </label>
+            <input type="text" name="Father Name" id="Mother">
+        </span> <br> <br>
+        <!-- add a Class information in form using Checkbox -->
+        <h4>
+            <label>Select Class :
+                <br><br>
+                <input type="checkbox" id="C1" name="SSC">
+                <label for="Class1"> 10th Class</label>
+                <input type="checkbox" id="C2" name="HSC">
+                <label for="Class2"> 12th Class </label>
+                <input type="checkbox" id="C3" name="BA">
+                <label for="Class3">Bachelor of Arts</label>
+                <input type="checkbox" id="C4" name="MA">
+                <label for="Class4">Master of Arts</label>
+            </label>
+        </h4>
+        <!-- add a Language information in form using radio button -->
+        <h4>
+            <label>Select Language : <br> <br>
+                <input type="radio" id="L1" name="Language">
+                <label for="Languages1">Marathi</label>
+                <input type="radio" id="L2" name="Language">
+                <label for="Languages2">Hindi</label>
+                <input type="radio" id="L3" name="Language">
+                <label for="Languages3"> English</label>
+            </label>
+        </h4>
+        <input type="submit" value=" Submit Data">
+    </form>
+
+</body>
+
+</html>
